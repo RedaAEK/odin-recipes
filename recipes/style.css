@@ -1,0 +1,67 @@
+* {
+    font-size:17px;
+    
+    color:beige;
+    margin: 5px 2px;
+    padding: 0 2px;
+}
+html , body {
+     font-family: 'roboto', sans-serif;
+    height: 100%;
+    width: 70%;
+    font-weight: 550;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/hand-drawn-pizza-pattern-background_23-2150905263.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1); /* flips horizontally */
+    z-index: -1; /* keep it behind content */
+    
+}
+body::after {
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    background: none; 
+    color: floralwhite;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    margin-right: auto;
+    height: 100%;
+    position: relative; 
+    overflow-x: hidden;
+    
+}
+h1,h3,strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color:burlywood;
+    filter: contrast(120%);
+}
+h1 {
+    margin-left:auto;
+    font-size: 25px;
+}
+.container li {
+    list-style: none;
+}
+.ing {
+    border: 2px solid  white;
+    border-radius: 10px;
+    width:70%;
+    list-style-position: inside;
+}
+img {
+    width: 100%;
+}
+a {
+    color:burlywood;
+}
